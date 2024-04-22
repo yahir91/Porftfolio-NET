@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets/portfolio.bundle.scp.css"
     },
     {
+      "Id": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/css/custom.css",
+      "PackagePath": "staticwebassets/css/custom.css"
+    },
+    {
       "Id": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/images/yahir.png",
+      "PackagePath": "staticwebassets/images/yahir.png"
     },
     {
       "Id": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/js/site.js",

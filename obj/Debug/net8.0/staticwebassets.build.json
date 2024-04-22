@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "45p9Ew7fLUKOdqBYd/Gxcx2r4swh0ehl/e7ovTqpp3E=",
+  "Hash": "IjhrbX7MYd9wPNL4uehVA02Lso02RmbbeG4D2rj9YSo=",
   "Source": "portfolio",
   "BasePath": "_content/portfolio",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "/Users/yahircardona/Documents/personal/dotnet/portfolio/obj/Debug/net8.0/scopedcss/projectbundle/portfolio.bundle.scp.css"
     },
     {
+      "Identity": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/css/custom.css",
+      "SourceId": "portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/",
+      "BasePath": "_content/portfolio",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/custom.css"
+    },
+    {
       "Identity": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/css/site.css",
       "SourceId": "portfolio",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/images/yahir.png",
+      "SourceId": "portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/",
+      "BasePath": "_content/portfolio",
+      "RelativePath": "images/yahir.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/yahir.png"
     },
     {
       "Identity": "/Users/yahircardona/Documents/personal/dotnet/portfolio/wwwroot/js/site.js",
