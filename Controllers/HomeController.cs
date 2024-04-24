@@ -1,31 +1,23 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using portfolio.Models;
+using portfolio.Servicios;
 
 namespace portfolio.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IRepositorioProyectos repositorioProyectos;
+    public HomeController(
+             IRepositorioProyectos repositorioProyectos
+             )
     {
-        _logger = logger;
-    }
-
-    private List<Proyecto> ObtenerProyectos()
-    {
-        return new List<Proyecto>() { new Proyecto{
-            Titulo = "Amazon",
-            Descripcion = "E-commerce",
-            Link = "",
-            ImagenURL= ""
-        }};
+        this.repositorioProyectos = repositorioProyectos;
     }
 
     public IActionResult Index()
     {
-        var proyectos = ObtenerProyectos();
+        var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
 
         var modelo = new HomeIndexViewModel()
         {
@@ -37,7 +29,7 @@ public class HomeController : Controller
 
     public IActionResult Proyectos()
     {
-        var proyectos = ObtenerProyectos();
+        var proyectos = repositorioProyectos.ObtenerProyectos();
         return View(proyectos);
     }
 
