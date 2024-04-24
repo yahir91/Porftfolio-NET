@@ -39,8 +39,15 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
+    {
+        // await servicioEmail.Enviar(contactoViewModel);
+        return RedirectToAction("Gracias");
+    }
 
-    public IActionResult Privacy()
+
+    public IActionResult Gracias()
     {
         return View();
     }
