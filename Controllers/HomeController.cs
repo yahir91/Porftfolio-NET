@@ -33,6 +33,12 @@ public class HomeController : Controller
         return View(proyectos);
     }
 
+    [HttpGet]
+    public IActionResult Contacto()
+    {
+        return View();
+    }
+
 
     public IActionResult Privacy()
     {
