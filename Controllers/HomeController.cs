@@ -13,17 +13,6 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        var proyectos = ObtenerProyectos().Take(3).ToList();
-
-        var modelo = new HomeIndexViewModel()
-        {
-            Proyectos = proyectos
-        };
-        return View(modelo);
-    }
-
     private List<Proyecto> ObtenerProyectos()
     {
         return new List<Proyecto>() { new Proyecto{
@@ -33,6 +22,19 @@ public class HomeController : Controller
             ImagenURL= ""
         }};
     }
+
+    public IActionResult Index()
+    {
+        var proyectos = ObtenerProyectos();
+
+        var modelo = new HomeIndexViewModel()
+        {
+            Proyectos = proyectos
+        };
+        return View(modelo);
+    }
+
+
     public IActionResult Proyectos()
     {
         var proyectos = ObtenerProyectos();
