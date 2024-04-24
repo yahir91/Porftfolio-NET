@@ -1,4 +1,4 @@
-namespace Portafolio.Models
+namespace portfolio.Models
 {
     public class HomeIndexViewModel
     {

@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Portafolio.Models;
 using portfolio.Models;
 
 namespace portfolio.Controllers;
@@ -14,24 +13,30 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-       public IActionResult Index()
+    public IActionResult Index()
+    {
+        var proyectos = ObtenerProyectos().Take(3).ToList();
+
+        var modelo = new HomeIndexViewModel()
         {
-            var proyectos = ObtenerProyectos().Take(3).ToList();
-          
-            var modelo = new HomeIndexViewModel() { 
-                Proyectos = proyectos
-            };
-            return View(modelo);
-        }
+            Proyectos = proyectos
+        };
+        return View(modelo);
+    }
 
     private List<Proyecto> ObtenerProyectos()
     {
         return new List<Proyecto>() { new Proyecto{
-            Titulo = "Amazon", 
-            Descripcion = "E-commerce", 
-            Link = "", 
+            Titulo = "Amazon",
+            Descripcion = "E-commerce",
+            Link = "",
             ImagenURL= ""
         }};
+    }
+    public IActionResult Proyectos()
+    {
+        var proyectos = ObtenerProyectos();
+        return View(proyectos);
     }
 
 
